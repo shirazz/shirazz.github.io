@@ -26,7 +26,8 @@
     "format": "prettier --write 'src/**/*.js'",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "gatsby build --prefix-links && gh-pages -d public"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "^3.4.3",
@@ -41,6 +42,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "gh-pages": "^1.2.0",
     "identity-obj-proxy": "^3.0.0",
     "imports-loader": "^0.8.0",
     "jest": "^22.4.3",
